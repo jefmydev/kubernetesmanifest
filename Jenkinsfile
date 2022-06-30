@@ -14,6 +14,7 @@ node {
 //                         sh "ls"
                         sh "git config user.email jefmydev@gmail.com"
                         sh "git config user.name jefmydev"
+                        sh "git status"
 //                         sh "git switch master"
 //                         sh "cat deployment.yaml"
 //                         sh "sed -i 's+jefriekussuma/myflask-app.*+jefriekussuma/myflask-app:${DOCKERTAG}+g' deployment.yaml"
