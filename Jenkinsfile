@@ -17,7 +17,7 @@ node {
 //                         sh "git status"
 //                         sh "git switch master"
                         sh "cat deployment.yaml"
-//                         sh "sed 'jefriekussuma/myflask-app:${DOCKERTAG}' deployment.yaml"
+                        sh "sed 'jefriekussuma/myflask-app:${DOCKERTAG}' deployment.yaml"
                         sh "touch file.test"
                         sh "cat deployment.yaml"
                         sh "git add ."
