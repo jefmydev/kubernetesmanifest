@@ -17,7 +17,7 @@ node {
 //                         sh "git status"
 //                         sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 'jefriekussuma/myflask-app:${DOCKERTAG}' deployment.yaml"
+                        sh "sed 'jefriekussuma/myflask-app:${DOCKERTAG}' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
