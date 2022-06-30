@@ -10,6 +10,7 @@ node {
                     withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                         //def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')
 //                         sh "cd kubernetesmanifest"
+                        set +e
                         sh "ls"
                         sh "git config user.email jefmydev@gmail.com"
                         sh "git config user.name jefmydev"
